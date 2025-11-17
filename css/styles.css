@@ -157,6 +157,25 @@ input {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.burger {
+  width: 16.8px;
+  padding: 0;
+  border: none;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: transparent;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 24px 0;
+  margin-right: 16px;
+}
+
+.burger:hover,
+.burger:focus {
+  fill: #404bbf;
+}
+
 .contacts {
   font-style: normal;
   margin-left: auto;
@@ -206,7 +225,7 @@ input {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 56px;
-  line-height: 107%;
+  line-height: 1.07;
   letter-spacing: 0.02em;
   color: #fff;
   max-width: 496px;
@@ -842,3 +861,23 @@ input:checked + label > .form-terms-checkbox {
 }
 
 /* #endregion modal-overlay */
+
+/* #region media-mobile */
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .header-nav,
+  .contacts {
+    display: none;
+  }
+  .burger {
+    display: flex;
+  }
+  .header-nav-all {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+/* #endregion media-mobile */
+
+/* #region media-tablet */
+/* #endregion media-tablet */
