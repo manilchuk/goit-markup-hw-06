@@ -1,7 +1,5 @@
 /* #region global */
-.hidden {
-  display: none;
-}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -309,6 +307,7 @@ input {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  font-style: normal;
   color: #434455;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1050,7 +1049,7 @@ input {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin-right: 7.5px;
+  margin-right: 8px;
   fill: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -1105,9 +1104,6 @@ input:checked + label > .form-terms-checkbox {
   }
   .form-input {
     max-width: 360px;
-  }
-  .form-terms-checkbox {
-    margin-right: 8px;
   }
 }
 @media screen and (min-width: 1158px) {
